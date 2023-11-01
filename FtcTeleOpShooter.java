@@ -86,10 +86,10 @@ public class FtcTeleOpShooter extends FtcOpMode
 
         motor1 = new FtcDcMotor("motor1");
         motor1.setMotorInverted(true);
-        motor1.setPositionSensorScaleAndOffset(MOTOR_SCALE, MOTOR_OFFSET);
+        motor1.setPositionSensorScaleAndOffset(MOTOR_SCALE, MOTOR_OFFSET, 0.0);
 //        motor1.setVelocityPidCoefficients(MOTOR_VEL_KP, MOTOR_VEL_KI, MOTOR_VEL_KD, MOTOR_VEL_KF);
         motor2 = new FtcDcMotor("motor2");
-        motor2.setPositionSensorScaleAndOffset(MOTOR_SCALE, MOTOR_OFFSET);
+        motor2.setPositionSensorScaleAndOffset(MOTOR_SCALE, MOTOR_OFFSET, 0.0);
 //        motor2.setVelocityPidCoefficients(MOTOR_VEL_KP, MOTOR_VEL_KI, MOTOR_VEL_KD, MOTOR_VEL_KF);
 //        motor2.followMotor(motor1);
     }   //robotInit

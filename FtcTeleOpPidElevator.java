@@ -92,7 +92,7 @@ public class FtcTeleOpPidElevator extends FtcOpMode implements TrcGameController
         upperLimitSwitch.setInverted(ELEVATOR_UPPER_LIMIT_SWITCH_INVERTED);
         elevator = new FtcDcMotor("elevator", lowerLimitSwitch, upperLimitSwitch, null);
         elevator.setMotorInverted(ELEVATOR_INVERTED);
-        elevator.setPositionSensorScaleAndOffset(ELEVATOR_INCHES_PER_COUNT, ELEVATOR_OFFSET);
+        elevator.setPositionSensorScaleAndOffset(ELEVATOR_INCHES_PER_COUNT, ELEVATOR_OFFSET, 0.0);
         elevator.setStallProtection(
             ELEVATOR_STALL_MIN_POWER, ELEVATOR_STALL_TOLERANCE, ELEVATOR_STALL_TIMEOUT, ELEVATOR_RESET_TIMEOUT);
         elevator.zeroCalibrate(ELEVATOR_CAL_POWER);

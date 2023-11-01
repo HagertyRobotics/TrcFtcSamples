@@ -169,7 +169,7 @@ public class DemoBotTeleOp extends FtcOpMode
             lowerLimitSwitch.setInverted(true);
             upperLimitSwitch.setInverted(true);
             elevator = new FtcDcMotor(HWNAME_ELEVATOR_MOTOR, lowerLimitSwitch, upperLimitSwitch, null);
-            elevator.setPositionSensorScaleAndOffset(ELEVATOR_INCHES_PER_COUNT, ELEVATOR_ZERO_OFFSET);
+            elevator.setPositionSensorScaleAndOffset(ELEVATOR_INCHES_PER_COUNT, ELEVATOR_ZERO_OFFSET, 0.0);
         }
 
         if (hasShooterGate)
